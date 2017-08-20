@@ -43,32 +43,32 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:layout_marginStart="4dp"
                     android:text="Date of Interview"
                     android:textColor="@color/primary_text"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="4dp" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:layout_marginStart="4dp"
                     android:text="Item Subtitle"
                     android:textColorHint="@color/hint_text"
-                    android:textSize="12sp"
-                    android:layout_marginLeft="4dp" />
+                    android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editTextInterviewDate"
                     android:layout_width="192dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
                     android:layout_marginStart="0dp"
                     android:hint="Hint text"
                     android:textColor="#424242"
                     android:textColorHint="@color/hint_text"
-                    android:textSize="14sp"
-                    android:layout_marginLeft="0dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
 
@@ -88,32 +88,32 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:layout_marginStart="4dp"
                     android:text="GoB HHID"
                     android:textColor="@color/primary_text"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="4dp" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:layout_marginStart="4dp"
                     android:text="Item Subtitle"
                     android:textColorHint="@color/hint_text"
-                    android:textSize="12sp"
-                    android:layout_marginLeft="4dp" />
+                    android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editTextGoBHHID"
                     android:layout_width="192dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
                     android:layout_marginStart="0dp"
                     android:hint="Hint text"
                     android:textColor="#424242"
                     android:textColorHint="@color/hint_text"
-                    android:textSize="14sp"
-                    android:layout_marginLeft="0dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -126,21 +126,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:layout_marginStart="4dp"
                     android:text="GPS Location of HH"
                     android:textColor="@color/primary_text"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="4dp" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:layout_marginStart="4dp"
                     android:text="Item Subtitle"
                     android:textColorHint="@color/hint_text"
-                    android:textSize="12sp"
-                    android:layout_marginLeft="4dp" />
+                    android:textSize="12sp" />
 
                 <ImageButton
                     android:id="@+id/buttonGPS"
@@ -158,12 +158,12 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
                         android:layout_marginStart="4dp"
                         android:layout_weight="1"
                         android:text="Latitude (x.y&#xb0;)"
                         android:textColorHint="@color/hint_text"
-                        android:textSize="12sp"
-                        android:layout_marginLeft="4dp" />
+                        android:textSize="12sp" />
 
                     <EditText
                         android:id="@+id/editTextLatitude"
@@ -184,24 +184,24 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
                         android:layout_marginStart="4dp"
                         android:layout_weight="1"
                         android:text="Longitude (x.y&#xb0;)"
                         android:textColorHint="@color/hint_text"
-                        android:textSize="12sp"
-                        android:layout_marginLeft="4dp" />
+                        android:textSize="12sp" />
 
                     <EditText
                         android:id="@+id/editTextLongitude"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
                         android:layout_marginStart="0dp"
                         android:layout_weight="2"
                         android:hint="Edit longitude"
                         android:textColor="#424242"
                         android:textColorHint="@color/hint_text"
-                        android:textSize="14sp"
-                        android:layout_marginLeft="0dp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -223,23 +223,23 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:layout_marginStart="4dp"
                     android:text="Head of Household Name"
                     android:textColor="@color/primary_text"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="4dp" />
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editTextHeadName"
                     android:layout_width="192dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
                     android:layout_marginStart="0dp"
                     android:hint="Enter his/her name"
                     android:textColor="#424242"
                     android:textColorHint="@color/hint_text"
-                    android:textSize="14sp"
-                    android:layout_marginLeft="0dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
 
@@ -259,12 +259,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:layout_marginStart="4dp"
                     android:text="Head of Household Gender"
                     android:textColor="@color/primary_text"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="4dp" />
+                    android:textStyle="bold" />
 
                 <RadioGroup
                     android:id="@+id/radioGroupHeadGender"
@@ -303,32 +303,32 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:text="Number of people currently in the household"
                     android:textColor="@color/primary_text"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="4dp" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:layout_marginStart="4dp"
                     android:text="Item Subtitle"
                     android:textColorHint="@color/hint_text"
-                    android:textSize="12sp"
-                    android:layout_marginLeft="4dp" />
+                    android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/editTextNumberPeople"
                     android:layout_width="256dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
                     android:layout_marginStart="0dp"
                     android:hint="Enter number of people"
                     android:inputType="number"
                     android:textColor="#424242"
                     android:textColorHint="@color/hint_text"
-                    android:textSize="14sp"
-                    android:layout_marginLeft="0dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
 
@@ -348,12 +348,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
                     android:layout_marginStart="4dp"
                     android:text="Any married women between the ages of 13-49 in the household?"
                     android:textColor="@color/primary_text"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="4dp" />
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="256dp"
@@ -396,6 +396,8 @@
             </LinearLayout>
 
             <include layout="@layout/layout_woman_registration" />
+
+            <include layout="@layout/layout_husband_registration" />
         </LinearLayout>
 
     </ScrollView>

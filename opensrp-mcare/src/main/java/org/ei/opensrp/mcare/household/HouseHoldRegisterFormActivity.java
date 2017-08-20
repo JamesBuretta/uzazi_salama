@@ -4,6 +4,8 @@ import android.support.annotation.IdRes;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
@@ -17,14 +19,19 @@ public class HouseHoldRegisterFormActivity extends ActionBarActivity {
 
 
     EditText editTextHeadName, editTextInterviewDate, editTextGoBHHID,
-            editTextJvitaHHID, editTextLatitude, editTextLongitude,
+            editTextLatitude, editTextLongitude,
             editTextNumberPeople, editTextWomanName, editTextWomanDOB;
     View spaceBottom;
 
     RadioGroup radioGroupGenderHeadHH, radioGroupStillMenstr,
-            radioGroupAnyWomanBtn1349, radioGroupWSterilized, radioGroupLiveWithHusband;
+            radioGroupAnyWomanBtn1349, radioGroupWSterilized,
+            radioGroupLiveWithHusband, radioGroupHusbandSter;
 
-    LinearLayout layoutWomanRegistration, layoutWSterilized, layoutHusbandAlive, layoutLiveWithHusband;
+    LinearLayout layoutWomanRegistration, layoutWSterilized, layoutHusbandAlive,
+            layoutLiveWithHusband, layoutHusbandRegForm, layoutWomanId,
+            layoutWomanNatId, layoutWomanBirthId;
+
+    CheckBox checkBoxNatId, checkBoxBirthId;
 
     SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy", Locale.ENGLISH);
     private static final String TAG = HouseHoldRegisterFormActivity.class.getSimpleName();
@@ -52,7 +59,6 @@ public class HouseHoldRegisterFormActivity extends ActionBarActivity {
         spaceBottom = findViewById(R.id.spaceBottom);
         editTextInterviewDate = (EditText) findViewById(R.id.editTextInterviewDate);
         editTextGoBHHID = (EditText) findViewById(R.id.editTextGoBHHID);
-        editTextJvitaHHID = (EditText) findViewById(R.id.editTextJivitaHHID);
         editTextHeadName = (EditText) findViewById(R.id.editTextHeadName);
         editTextLatitude = (EditText) findViewById(R.id.editTextLatitude);
         editTextLongitude = (EditText) findViewById(R.id.editTextLongitude);
@@ -68,6 +74,7 @@ public class HouseHoldRegisterFormActivity extends ActionBarActivity {
         radioGroupStillMenstr = (RadioGroup) findViewById(R.id.radioGroupMenstr);
         radioGroupWSterilized = (RadioGroup) findViewById(R.id.radioGroupWomanSterilized);
         radioGroupLiveWithHusband = (RadioGroup) findViewById(R.id.radioGroupWLiveWithHusband);
+        radioGroupHusbandSter = (RadioGroup) findViewById(R.id.radioGroupHusbandSterilized);
 
 
         layoutWomanRegistration = (LinearLayout) findViewById(R.id.layoutWomanRegistration);
@@ -77,6 +84,18 @@ public class HouseHoldRegisterFormActivity extends ActionBarActivity {
         layoutWSterilized = (LinearLayout) findViewById(R.id.layoutWSterilized);
         layoutHusbandAlive = (LinearLayout) findViewById(R.id.layoutHusbandAlive);
         layoutLiveWithHusband = (LinearLayout) findViewById(R.id.layoutWLiveWithHusband);
+
+        layoutHusbandRegForm = (LinearLayout) findViewById(R.id.layoutHusbandGerForm);
+        layoutHusbandRegForm.setVisibility(View.GONE);
+
+        layoutWomanId = (LinearLayout) findViewById(R.id.layoutWomanId);
+        layoutWomanNatId = (LinearLayout) findViewById(R.id.layoutWomanNatId);
+        layoutWomanBirthId = (LinearLayout) findViewById(R.id.layoutWomanBirthId);
+
+
+        // checkboxes
+        checkBoxNatId = (CheckBox) findViewById(R.id.checkboxNatId);
+        checkBoxBirthId = (CheckBox) findViewById(R.id.checkboxBirthId);
 
 
     }
@@ -149,11 +168,52 @@ public class HouseHoldRegisterFormActivity extends ActionBarActivity {
                 if (i == R.id.radioYesLiveWithHusband) {
                     // show husband registration
                     layoutHusbandAlive.setVisibility(View.GONE);
+                    layoutHusbandRegForm.setVisibility(View.VISIBLE);
                 } else {
                     // ask if the husband is alive
                     layoutHusbandAlive.setVisibility(View.VISIBLE);
                 }
 
+            }
+        });
+
+
+        radioGroupHusbandSter.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+                if (i == R.id.radioNoHSterilized) {
+                    // show husband registration
+                    layoutWomanId.setVisibility(View.VISIBLE);
+                } else {
+                    // ask if the husband is alive
+                    layoutWomanId.setVisibility(View.GONE);
+                }
+
+            }
+        });
+
+        checkBoxNatId.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                if (isChecked)
+                    // show natId input field
+                    layoutWomanNatId.setVisibility(View.VISIBLE);
+                else
+                    // hide natId input field
+                    layoutWomanNatId.setVisibility(View.GONE);
+            }
+        });
+
+
+        checkBoxBirthId.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                if (isChecked)
+                    // show birthId input field
+                    layoutWomanBirthId.setVisibility(View.VISIBLE);
+                else
+                    // hide birthId input field
+                    layoutWomanBirthId.setVisibility(View.GONE);
             }
         });
     }
