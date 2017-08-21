@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import org.ei.opensrp.mcare.ANCRegisterFormActivity;
 import org.ei.opensrp.mcare.R;
 
 public class ChooseFormActivity extends ActionBarActivity {
@@ -20,6 +21,14 @@ public class ChooseFormActivity extends ActionBarActivity {
             public void onClick(View view) {
                 startActivity(new Intent(ChooseFormActivity.this,
                         HouseHoldRegisterFormActivity.class));
+            }
+        });
+
+        findViewById(R.id.buttonANCRegister).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ChooseFormActivity.this,
+                        ANCRegisterFormActivity.class));
             }
         });
     }

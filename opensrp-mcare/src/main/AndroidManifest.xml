@@ -100,6 +100,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ANCRegisterFormActivity"
+            android:label="Rejista Ya Mama Wajawazito"
+            android:theme="@style/AppTheme.Forms" />
     </application>
 
 </manifest>
