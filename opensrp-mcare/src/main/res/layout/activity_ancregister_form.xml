@@ -14,7 +14,7 @@
         <EditText
             android:id="@+id/editTextClinicName"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:hint="Jina la kliniki"
@@ -27,7 +27,7 @@
         <EditText
             android:id="@+id/editTextMotherName"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="8dp"
@@ -41,7 +41,7 @@
         <EditText
             android:id="@+id/editTextMotherAge"
             android:layout_width="128dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="8dp"
@@ -60,7 +60,7 @@
             <EditText
                 android:id="@+id/editTextMotherEdu"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
@@ -75,7 +75,7 @@
             <EditText
                 android:id="@+id/editTextMotherWork"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="8dp"
@@ -88,7 +88,6 @@
                 android:textSize="14sp" />
 
         </LinearLayout>
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -128,7 +127,7 @@
         <EditText
             android:id="@+id/editTextPartnerName"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="24dp"
@@ -143,7 +142,7 @@
         <EditText
             android:id="@+id/editTextPartnerAge"
             android:layout_width="128dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="8dp"
@@ -162,7 +161,7 @@
             <EditText
                 android:id="@+id/editTextPartnerEdu"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
@@ -177,7 +176,7 @@
             <EditText
                 android:id="@+id/editTextPartnerWork"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="8dp"
@@ -199,7 +198,7 @@
             <EditText
                 android:id="@+id/editTextVillage"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
@@ -214,7 +213,7 @@
             <EditText
                 android:id="@+id/editTextDistrict"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="8dp"
@@ -230,7 +229,7 @@
         <EditText
             android:id="@+id/editVillage"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="8dp"
@@ -240,6 +239,8 @@
             android:textColor="@color/primary_text"
             android:textColorHint="@color/hint_text"
             android:textSize="14sp" />
+
+        <include layout="@layout/layout_previous_birth" />
 
         <View
             android:layout_width="wrap_content"
