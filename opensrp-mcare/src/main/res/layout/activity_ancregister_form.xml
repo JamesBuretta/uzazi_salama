@@ -242,6 +242,10 @@
 
         <include layout="@layout/layout_previous_birth" />
 
+        <include layout="@layout/layout_indicators_a" />
+
+        <include layout="@layout/layout_indicators_b" />
+
         <View
             android:layout_width="wrap_content"
             android:layout_height="128dp"
