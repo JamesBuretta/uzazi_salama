@@ -27,8 +27,8 @@ public class ANCRegisterPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 return new ANCRegister2ndFragment();
 
-            case 2:
-                return new ANCRegister3rdFragment();
+//            case 2:
+//                return new ANCRegister3rdFragment();
 
             default:
                 return null;
@@ -37,11 +37,23 @@ public class ANCRegisterPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 2;
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return String.valueOf(position + 1);
+        switch (position) {
+            case 0:
+                return "Kuhusu mama";
+
+            case 1:
+                return "Vidokezo";
+
+//            case 2:
+//                return new ANCRegister3rdFragment();
+
+            default:
+                return String.valueOf(position + 1);
+        }
     }
 }
