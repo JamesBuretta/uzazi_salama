@@ -33,6 +33,7 @@ dependencies {
     compile 'com.android.support:support-annotations:21.0.3'
     compile 'com.android.support:design:22.2.1'
     compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.wdullaer:materialdatetimepicker:3.2.2'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
     androidTestCompile 'com.android.support.test.espresso:espresso-contrib:2.2.1'
     androidTestCompile 'com.android.support.test.espresso:espresso-intents:2.2.1'
