@@ -55,257 +55,257 @@
     </android.support.v4.view.ViewPager>
 
 
-    <android.support.v4.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <!--<android.support.v4.widget.NestedScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
 
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="16dp">
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingTop="16dp">-->
 
-            <EditText
-                android:id="@+id/editTextClinicName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:hint="Jina la kliniki"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:textColor="@color/primary_text"
-                android:textColorHint="@color/hint_text"
-                android:textSize="14sp" />
+    <!--<EditText-->
+    <!--android:id="@+id/editTextClinicName"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:hint="Jina la kliniki"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/primary_text"-->
+    <!--android:textColorHint="@color/hint_text"-->
+    <!--android:textSize="14sp" />-->
 
-            <EditText
-                android:id="@+id/editTextMotherName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="8dp"
-                android:hint="Jina la Mama"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:textColor="@color/primary_text"
-                android:textColorHint="@color/hint_text"
-                android:textSize="14sp" />
+    <!--<EditText-->
+    <!--android:id="@+id/editTextMotherName"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:hint="Jina la Mama"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/primary_text"-->
+    <!--android:textColorHint="@color/hint_text"-->
+    <!--android:textSize="14sp" />-->
 
-            <EditText
-                android:id="@+id/editTextMotherAge"
-                android:layout_width="128dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="8dp"
-                android:hint="Umri"
-                android:inputType="number"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:textColor="@color/primary_text"
-                android:textColorHint="@color/hint_text"
-                android:textSize="14sp" />
+    <!--<EditText-->
+    <!--android:id="@+id/editTextMotherAge"-->
+    <!--android:layout_width="128dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:hint="Umri"-->
+    <!--android:inputType="number"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/primary_text"-->
+    <!--android:textColorHint="@color/hint_text"-->
+    <!--android:textSize="14sp" />-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
 
-                <EditText
-                    android:id="@+id/editTextMotherEdu"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="1"
-                    android:hint="Elimu"
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:textColor="@color/primary_text"
-                    android:textColorHint="@color/hint_text"
-                    android:textSize="14sp" />
+    <!--<EditText-->
+    <!--android:id="@+id/editTextMotherEdu"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:hint="Elimu"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/primary_text"-->
+    <!--android:textColorHint="@color/hint_text"-->
+    <!--android:textSize="14sp" />-->
 
-                <EditText
-                    android:id="@+id/editTextMotherWork"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="1"
-                    android:hint="Kazi"
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:textColor="@color/primary_text"
-                    android:textColorHint="@color/hint_text"
-                    android:textSize="14sp" />
+    <!--<EditText-->
+    <!--android:id="@+id/editTextMotherWork"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:hint="Kazi"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/primary_text"-->
+    <!--android:textColorHint="@color/hint_text"-->
+    <!--android:textSize="14sp" />-->
 
-            </LinearLayout>
+    <!--</LinearLayout>-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
-                android:text="Urefu wa mama"
-                android:textColor="@color/secondary_text"
-                android:textSize="14sp" />
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:text="Urefu wa mama"-->
+    <!--android:textColor="@color/secondary_text"-->
+    <!--android:textSize="14sp" />-->
 
-            <RadioGroup
-                android:id="@+id/radioGroupHeight"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp">
+    <!--<RadioGroup-->
+    <!--android:id="@+id/radioGroupHeight"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp">-->
 
-                <RadioButton
-                    android:id="@+id/radioAbove150"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
-                    android:text="Juu ya 150 cm"
-                    android:textColor="@color/primary_text" />
+    <!--<RadioButton-->
+    <!--android:id="@+id/radioAbove150"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingBottom="8dp"-->
+    <!--android:paddingTop="8dp"-->
+    <!--android:text="Juu ya 150 cm"-->
+    <!--android:textColor="@color/primary_text" />-->
 
-                <RadioButton
-                    android:id="@+id/radioBelow150"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
-                    android:text="Chini ya 150 cm"
-                    android:textColor="@color/primary_text" />
-            </RadioGroup>
+    <!--<RadioButton-->
+    <!--android:id="@+id/radioBelow150"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingBottom="8dp"-->
+    <!--android:paddingTop="8dp"-->
+    <!--android:text="Chini ya 150 cm"-->
+    <!--android:textColor="@color/primary_text" />-->
+    <!--</RadioGroup>-->
 
-            <EditText
-                android:id="@+id/editTextPartnerName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="24dp"
-                android:hint="Jina la Mume/Mwenzi"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:textColor="@color/primary_text"
-                android:textColorHint="@color/hint_text"
-                android:textSize="14sp" />
-
-
-            <EditText
-                android:id="@+id/editTextPartnerAge"
-                android:layout_width="128dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="8dp"
-                android:hint="Umri"
-                android:inputType="number"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:textColor="@color/primary_text"
-                android:textColorHint="@color/hint_text"
-                android:textSize="14sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:id="@+id/editTextPartnerEdu"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="1"
-                    android:hint="Elimu"
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:textColor="@color/primary_text"
-                    android:textColorHint="@color/hint_text"
-                    android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editTextPartnerWork"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="1"
-                    android:hint="Kazi"
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:textColor="@color/primary_text"
-                    android:textColorHint="@color/hint_text"
-                    android:textSize="14sp" />
-            </LinearLayout>
+    <!--<EditText-->
+    <!--android:id="@+id/editTextPartnerName"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_marginTop="24dp"-->
+    <!--android:hint="Jina la Mume/Mwenzi"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/primary_text"-->
+    <!--android:textColorHint="@color/hint_text"-->
+    <!--android:textSize="14sp" />-->
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp">
+    <!--<EditText-->
+    <!--android:id="@+id/editTextPartnerAge"-->
+    <!--android:layout_width="128dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:hint="Umri"-->
+    <!--android:inputType="number"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/primary_text"-->
+    <!--android:textColorHint="@color/hint_text"-->
+    <!--android:textSize="14sp" />-->
 
-                <EditText
-                    android:id="@+id/editTextVillage"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="1"
-                    android:hint="Kijiji/Mtaa"
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:textColor="@color/primary_text"
-                    android:textColorHint="@color/hint_text"
-                    android:textSize="14sp" />
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
 
-                <EditText
-                    android:id="@+id/editTextDistrict"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_weight="1"
-                    android:hint="Wilaya"
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:textColor="@color/primary_text"
-                    android:textColorHint="@color/hint_text"
-                    android:textSize="14sp" />
-            </LinearLayout>
+    <!--<EditText-->
+    <!--android:id="@+id/editTextPartnerEdu"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:hint="Elimu"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/primary_text"-->
+    <!--android:textColorHint="@color/hint_text"-->
+    <!--android:textSize="14sp" />-->
 
-            <EditText
-                android:id="@+id/editVillage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="8dp"
-                android:hint="Jina la Mwenyekiti"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:textColor="@color/primary_text"
-                android:textColorHint="@color/hint_text"
-                android:textSize="14sp" />
+    <!--<EditText-->
+    <!--android:id="@+id/editTextPartnerWork"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:hint="Kazi"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/primary_text"-->
+    <!--android:textColorHint="@color/hint_text"-->
+    <!--android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
 
-            <!--<include layout="@layout/layout_previous_birth" />-->
 
-            <!--<include layout="@layout/layout_indicators_a" />-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="32dp">-->
 
-            <!--<include layout="@layout/layout_indicators_b" />-->
+    <!--<EditText-->
+    <!--android:id="@+id/editTextVillage"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:hint="Kijiji/Mtaa"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/primary_text"-->
+    <!--android:textColorHint="@color/hint_text"-->
+    <!--android:textSize="14sp" />-->
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="128dp"
-                android:clickable="false" />
-        </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    <!--<EditText-->
+    <!--android:id="@+id/editTextDistrict"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:hint="Wilaya"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/primary_text"-->
+    <!--android:textColorHint="@color/hint_text"-->
+    <!--android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/editVillage"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:hint="Jina la Mwenyekiti"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:textColor="@color/primary_text"-->
+    <!--android:textColorHint="@color/hint_text"-->
+    <!--android:textSize="14sp" />-->
+
+    <!--<include layout="@layout/layout_previous_birth" />-->
+
+    <!--<include layout="@layout/layout_indicators_a" />-->
+
+    <!--<include layout="@layout/layout_indicators_b" />-->
+
+    <!--<View-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="128dp"-->
+    <!--android:clickable="false" />-->
+    <!--</LinearLayout>-->
+    <!--</android.support.v4.widget.NestedScrollView>-->
 </android.support.design.widget.CoordinatorLayout>

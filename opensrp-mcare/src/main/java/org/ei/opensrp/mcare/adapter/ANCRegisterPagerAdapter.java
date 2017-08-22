@@ -4,6 +4,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import org.ei.opensrp.mcare.fragment.ANCRegister1stFragment;
+import org.ei.opensrp.mcare.fragment.ANCRegister2ndFragment;
+import org.ei.opensrp.mcare.fragment.ANCRegister3rdFragment;
+
 /**
  * Created by ali on 8/22/17.
  */
@@ -16,12 +20,24 @@ public class ANCRegisterPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return null;
+        switch (position) {
+            case 0:
+                return new ANCRegister1stFragment();
+
+            case 1:
+                return new ANCRegister2ndFragment();
+
+            case 2:
+                return new ANCRegister3rdFragment();
+
+            default:
+                return null;
+        }
     }
 
     @Override
     public int getCount() {
-        return 4;
+        return 3;
     }
 
     @Override
