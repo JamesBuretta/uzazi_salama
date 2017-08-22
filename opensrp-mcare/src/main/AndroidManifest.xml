@@ -92,7 +92,7 @@
             android:name=".household.HouseHoldRegisterFormActivity"
             android:theme="@style/AppTheme.Forms" />
         <activity
-            android:name=".household.ChooseFormActivity"
+            android:name=".ChooseFormActivity"
             android:theme="@style/AppTheme.Forms">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
