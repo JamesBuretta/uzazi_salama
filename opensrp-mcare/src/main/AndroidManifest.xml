@@ -103,7 +103,7 @@
         <activity
             android:name=".ANCRegisterFormActivity"
             android:label="Rejista Ya Mama Wajawazito"
-            android:theme="@style/AppTheme.Forms" />
+            android:theme="@style/AppTheme.ANCRegister" />
     </application>
 
 </manifest>
