@@ -1,7 +1,10 @@
 package org.ei.opensrp.mcare;
 
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -69,6 +72,32 @@ public class ANCRegisterFormActivity extends ActionBarActivity {
 
         tabs = (TabLayout) findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
+
+        // tabs icons
+        tabs.getTabAt(0).setIcon(R.drawable.ic_account_circle);
+        tabs.getTabAt(1).setIcon(R.drawable.ic_message_bulleted);
+
+        final int colorWhite = ContextCompat.getColor(getApplicationContext(), android.R.color.white);
+        final int colorPrimaryLight = ContextCompat.getColor(getApplicationContext(), R.color.primary_light);
+
+        tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                if (tab.getIcon() != null)
+                    tab.getIcon().setColorFilter(colorWhite, PorterDuff.Mode.SRC_IN);
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+                if (tab.getIcon() != null)
+                    tab.getIcon().setColorFilter(colorPrimaryLight, PorterDuff.Mode.SRC_IN);
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+            }
+        });
     }
 
     @Override
