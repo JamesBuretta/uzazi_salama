@@ -79,7 +79,8 @@
                         android:layout_height="24dp"
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="4dp"
-                        android:src="@drawable/ic_account_circle" />
+                        android:src="@drawable/ic_account_circle"
+                        android:tint="@color/secondary_text" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -108,7 +109,8 @@
                         android:layout_height="24dp"
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="4dp"
-                        android:src="@drawable/ic_login_lock" />
+                        android:src="@drawable/ic_login_lock"
+                        android:tint="@color/secondary_text" />
                 </FrameLayout>
 
                 <Button

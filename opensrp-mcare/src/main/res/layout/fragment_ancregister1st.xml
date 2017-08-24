@@ -9,8 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingTop="16dp">
+        android:orientation="vertical">
 
         <!--<EditText-->
         <!--android:id="@+id/editTextClinicName"-->
@@ -24,138 +23,10 @@
         <!--android:textColor="@color/primary_text"-->
         <!--android:textColorHint="@color/hint_text"-->
         <!--android:textSize="14sp" />-->
+        <include layout="@layout/layout_mother_register" />
 
-        <LinearLayout
-            android:id="@+id/layoutDatePick"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:padding="8dp">
+        <include layout="@layout/layout_previous_birth" />
 
-            <ImageView
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_marginRight="4dp"
-                android:src="@drawable/ic_calendar_today"
-                android:tint="?attr/colorAccent" />
-
-            <TextView
-                android:id="@+id/textDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginRight="4dp"
-                android:text="dd mm yyyy"
-                android:textColor="@color/secondary_text"
-                android:textSize="14sp" />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_margin="8dp"
-                android:src="@drawable/ic_edit"
-                android:tint="?attr/colorAccent" />
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/editTextMotherName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
-            android:hint="Jina la Mama"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:textColor="@color/primary_text"
-            android:textColorHint="@color/hint_text"
-            android:textSize="14sp" />
-
-        <EditText
-            android:id="@+id/editTextMotherId"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
-            android:hint="No. ya Utambulisho"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:textColor="@color/primary_text"
-            android:textColorHint="@color/hint_text"
-            android:textSize="14sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/editTextMotherAge"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:hint="Umri wa Mama"
-                android:inputType="number"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:textColor="@color/primary_text"
-                android:textColorHint="@color/hint_text"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/editTextHeight"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_weight="1"
-                android:hint="Urefu"
-                android:inputType="number"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:textColor="@color/primary_text"
-                android:textColorHint="@color/hint_text"
-                android:textSize="14sp" />
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:text="Muda wa ujauzito katika wiki"
-            android:textColor="@color/secondary_text"
-            android:textSize="14sp" />
-
-        <RadioGroup
-            android:id="@+id/radioGroupPeriod"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
-
-            <RadioButton
-                android:id="@+id/radioAbove150"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="4dp"
-                android:paddingTop="4dp"
-                android:text="&lt;20"
-                android:textColor="@color/primary_text" />
-
-            <RadioButton
-                android:id="@+id/radioBelow150"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="4dp"
-                android:paddingTop="4dp"
-                android:text="20+"
-                android:textColor="@color/primary_text" />
-        </RadioGroup>
 
         <!--<TextView-->
         <!--android:layout_width="wrap_content"-->

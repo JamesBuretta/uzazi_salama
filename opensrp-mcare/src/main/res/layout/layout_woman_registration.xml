@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
             android:text="Woman Name"
             android:textColor="@color/primary_text"
             android:textSize="14sp"
@@ -34,7 +34,7 @@
             android:id="@+id/editTextWomanName"
             android:layout_width="192dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
             android:hint="Enter woman's name"
             android:inputType="textPersonName"
             android:textColor="@color/primary_text"
@@ -58,7 +58,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
             android:text="Date of Birth"
             android:textColor="@color/primary_text"
             android:textSize="14sp"
@@ -67,7 +67,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
             android:text="Item Subtitle"
             android:textColorHint="@color/hint_text"
             android:textSize="12sp" />
@@ -76,7 +76,7 @@
             android:id="@+id/editTextWomanDOB"
             android:layout_width="192dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
             android:hint="Hint text"
             android:textColor="#424242"
             android:textColorHint="@color/hint_text"
@@ -94,7 +94,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
         android:text="Still menstruating?"
         android:textColor="@color/primary_text"
         android:textSize="14sp"
@@ -155,7 +155,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
             android:text="Are you sterilized?"
             android:textColor="@color/primary_text"
             android:textSize="14sp"
@@ -208,7 +208,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
             android:text="Are you currently live with your husband?"
             android:textColor="@color/primary_text"
             android:textSize="14sp"
@@ -261,7 +261,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
             android:text="Is husband still alive?"
             android:textColor="@color/primary_text"
             android:textSize="14sp"
