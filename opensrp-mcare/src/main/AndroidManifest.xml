@@ -90,10 +90,10 @@
 
         <activity
             android:name=".household.HouseHoldRegisterFormActivity"
-            android:theme="@style/AppTheme.Forms" />
+            android:theme="@style/AppTheme.MaterialDesign" />
         <activity
             android:name=".ChooseFormActivity"
-            android:theme="@style/AppTheme.Forms">
+            android:theme="@style/AppTheme.MaterialDesign">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -103,7 +103,11 @@
         <activity
             android:name=".ANCRegisterFormActivity"
             android:label="Rejista Ya Mama Wajawazito"
-            android:theme="@style/AppTheme.ANCRegister" />
+            android:theme="@style/AppTheme.MaterialDesign.ANCRegister" />
+        <activity
+            android:name=".MaternityRegisterActivity"
+            android:label="Rejesta Ya Wazazi"
+            android:theme="@style/AppTheme.MaterialDesign" />
     </application>
 
 </manifest>

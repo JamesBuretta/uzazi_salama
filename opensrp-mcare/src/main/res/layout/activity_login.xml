@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="false"
-    app:theme="@style/AppTheme.TranslucentStatus">
+    app:theme="@style/AppTheme.MaterialDesign.TranslucentStatus">
 
 
     <LinearLayout

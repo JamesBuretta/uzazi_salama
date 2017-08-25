@@ -30,6 +30,16 @@
             android:text="ANC Register"
             android:textAllCaps="false"
             android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonMaternityRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/colorAccent"
+            android:text="Maternity Register"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
 </FrameLayout>

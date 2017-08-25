@@ -31,6 +31,14 @@ public class ANCRegisterFormActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ancregister_form);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.mToolbar);
+        setSupportActionBar(toolbar);
+
+        ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setTitle("Rejesta Ya Wajawazito");
+
+
         animationFabShow = AnimationUtils.loadAnimation(getApplicationContext(),
                 R.anim.anim_fab_show_fast);
         animationFabHide = AnimationUtils.loadAnimation(getApplicationContext(),

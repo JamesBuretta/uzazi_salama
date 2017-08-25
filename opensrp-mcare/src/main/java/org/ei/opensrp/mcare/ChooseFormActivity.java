@@ -30,5 +30,14 @@ public class ChooseFormActivity extends ActionBarActivity {
                         ANCRegisterFormActivity.class));
             }
         });
+
+        findViewById(R.id.buttonMaternityRegister).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ChooseFormActivity.this,
+                        MaternityRegisterActivity.class));
+            }
+        });
     }
 }
+
