@@ -4,6 +4,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -100,6 +101,24 @@ public class MaternityRegisterActivity extends AppCompatActivity {
                 Log.d(TAG, "onCheckedChanged: checked=" + isChecked);
             }
         });
+
+        findViewById(R.id.fabSubmit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // do magic
+                if (isFormSubmissionOk()) {
+                    // all compulsory fields are ok
+                    // check for the optional fields
+                    if (checkBoxBBA.isChecked())
+                        /* include bba */ ;
+
+                    if (!TextUtils.isEmpty(editTextDeliveryProblems.getText()))
+                        /* include delivery problems entered */ ;
+
+                    // then submit form to database
+                }
+            }
+        });
     }
 
 
@@ -143,5 +162,27 @@ public class MaternityRegisterActivity extends AppCompatActivity {
         methodList.add("Method 3");
 
         return methodList;
+    }
+
+    private boolean isFormSubmissionOk() {
+
+        if (TextUtils.isEmpty(editTextIdNo.getText()))
+            // id err, compulsory
+            return false;
+        else if (TextUtils.isEmpty(editTextMotherName.getText()))
+            // name err, compulsory
+            return false;
+        else if (TextUtils.isEmpty(editTextAge.getText()))
+            // age err, compulsory
+            return false;
+        else if (TextUtils.isEmpty(editTextPara.getText()))
+            // para err, compulsory
+            return false;
+        else if (spinnerDeliveryMethod.getSelectedItemPosition() < 0)
+            // delivery method err, compulsory
+            return false;
+        else
+            // all required fields are ok
+            return true;
     }
 }
