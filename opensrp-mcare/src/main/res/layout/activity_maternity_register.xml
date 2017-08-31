@@ -167,13 +167,21 @@
                 android:text="BBA/Kuharibika kwa mimba"
                 android:textColor="@color/secondary_text" />
 
-            <android.support.v7.widget.AppCompatSpinner
+            <fr.ganfra.materialspinner.MaterialSpinner
                 android:id="@+id/spinnerDeliveryMethod"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
 
+                app:ms_arrowColor="@color/accent"
+                app:ms_arrowSize="14dp"
+                app:ms_baseColor="@color/accent"
+                app:ms_enableFloatingLabel="false"
+                app:ms_hint="Njia ya kujifungua"
+                app:ms_hintColor="@color/hint_text"
+                app:ms_multiline="false"
+                app:ms_thickness="1dp"
                 app:paddingEnd="16dp"
                 app:paddingStart="16dp" />
 
