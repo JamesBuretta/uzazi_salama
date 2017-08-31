@@ -8,6 +8,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
@@ -27,6 +30,9 @@ public class MaternityRegisterActivity extends AppCompatActivity {
     TextView textDateDelivery, textDateAdmission;
     MaterialSpinner spinnerDeliveryMethod;
     ArrayAdapter<String> methodsAdapter;
+    EditText editTextIdNo, editTextMotherName, editTextAge,
+            editTextPara, editTextDeliveryProblems;
+    CheckBox checkBoxBBA;
 
 
     private SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMM yyyy", Locale.getDefault());
@@ -42,6 +48,12 @@ public class MaternityRegisterActivity extends AppCompatActivity {
         cardDatePickDelivery = (CardView) findViewById(R.id.cardPickDateDelivery);
         textDateDelivery = (TextView) findViewById(R.id.textDateDelivery);
         textDateAdmission = (TextView) findViewById(R.id.textDateAdmission);
+        editTextIdNo = (EditText) findViewById(R.id.editTextIdNo);
+        editTextMotherName = (EditText) findViewById(R.id.editTextMotherName);
+        editTextAge = (EditText) findViewById(R.id.editTextAge);
+        editTextPara = (EditText) findViewById(R.id.editTextPara);
+        editTextDeliveryProblems = (EditText) findViewById(R.id.editTextDeliveryProblems);
+        checkBoxBBA = (CheckBox) findViewById(R.id.checkboxBBA);
         spinnerDeliveryMethod = (MaterialSpinner) findViewById(R.id.spinnerDeliveryMethod);
         // spinner adapter
         methodsAdapter = new ArrayAdapter<>(
@@ -79,6 +91,13 @@ public class MaternityRegisterActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
+            }
+        });
+
+        checkBoxBBA.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                Log.d(TAG, "onCheckedChanged: checked=" + isChecked);
             }
         });
     }

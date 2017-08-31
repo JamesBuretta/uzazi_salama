@@ -55,7 +55,7 @@
             </android.support.v7.widget.CardView>
 
             <EditText
-                android:id="@+id/editTextMotherId"
+                android:id="@+id/editTextIdNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -192,8 +192,10 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
+                android:gravity="start|top"
                 android:hint="Matatizo wakati wa kujifungua (kama kuna lolote)."
                 android:imeOptions="actionDone"
+                android:minHeight="96dp"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:textColor="@color/primary_text"
